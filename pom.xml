@@ -183,12 +183,6 @@
                 <scope>test</scope>
             </dependency>
             
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-thrift</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
