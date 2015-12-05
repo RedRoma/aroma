@@ -193,6 +193,12 @@
             
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-thrift</artifactId>
+                <version>0.9</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-test</artifactId>
                 <version>1.2.1</version>
                 <scope>test</scope>
@@ -324,6 +330,13 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>1.6</version>
+                        <configuration>
+                            <excludes>
+                                <exclude>tech.sirwellington.alchemy.thrift.*</exclude>
+                                <exclude>tech.sirwellington.alchemy.thrift.*</exclude>
+                                <exclude>**/*Exception.*</exclude>
+                            </excludes>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
