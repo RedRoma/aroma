@@ -150,6 +150,13 @@
                 <artifactId>gson</artifactId>
                 <version>2.4</version>
             </dependency>
+            
+            <!--Google Guice-->
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice</artifactId>
+                <version>4.0</version>
+            </dependency>
 
             <!--Apache Thrift-->
             <dependency>
