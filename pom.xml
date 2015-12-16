@@ -224,7 +224,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css</url>
+                            <url>https://raw.githubusercontent.com/AromaTech/banana/develop/javadoc-style-sheet.css</url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
                             <failOnError>false</failOnError>
                         </configuration>
