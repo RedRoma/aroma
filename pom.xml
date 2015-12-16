@@ -4,7 +4,7 @@
 
     <groupId>tech.aroma.banana</groupId>
     <artifactId>banana</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
@@ -224,7 +224,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css</url>
+                            <url>https://raw.githubusercontent.com/AromaTech/banana/develop/javadoc-style-sheet.css</url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
                             <failOnError>false</failOnError>
                         </configuration>
