@@ -164,7 +164,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>18.0</version>
+                <version>19.0</version>
             </dependency>
             <!--====================-->
 
@@ -192,7 +192,6 @@
             </dependency>
             <!--====================-->
 
-         
             
             <!--CASSANDRA--> 
             <dependency>
