@@ -123,13 +123,16 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-            
+            <!--====================-->
+
+
             <!--LOGGING-->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.13</version>
             </dependency>
+            <!--====================-->
 
             <!--Simple Logger for Test Runs-->
             <dependency>
@@ -138,13 +141,15 @@
                 <version>1.7.13</version>
                 <scope>test</scope>
             </dependency>
-            
+            <!--====================-->
+
             <!--LOGBACK-->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>1.1.3</version>
             </dependency>
+            <!--====================-->
 
 
             <!--APACHE HTTP-->
@@ -153,6 +158,7 @@
                 <artifactId>httpclient</artifactId>
                 <version>4.5.1</version>
             </dependency>
+            <!--====================-->
 
             <!--GUAVA-->
             <dependency>
@@ -160,6 +166,7 @@
                 <artifactId>guava</artifactId>
                 <version>18.0</version>
             </dependency>
+            <!--====================-->
 
             <!--GSON-->
             <dependency>
@@ -167,13 +174,15 @@
                 <artifactId>gson</artifactId>
                 <version>2.5</version>
             </dependency>
-            
+            <!--====================-->
+
             <!--GUICE-->
             <dependency>
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
                 <version>4.0</version>
             </dependency>
+            <!--====================-->
 
             <!--THRIFT-->
             <dependency>
@@ -181,6 +190,7 @@
                 <artifactId>libthrift</artifactId>
                 <version>0.9.3</version>
             </dependency>
+            <!--====================-->
 
          
             
@@ -195,7 +205,8 @@
                 <artifactId>cassandra-driver-mapping</artifactId>
                 <version>2.2.0-rc3</version>
             </dependency>
-            
+            <!--====================-->
+
             
             <!--UNIT TESTING-->
             <dependency>
@@ -218,14 +229,15 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-            
+            <!--====================-->
+
         </dependencies>
     </dependencyManagement>
 
     <build>
         <plugins>
-
-            <!--Download Javadoc Stylesheet-->
+        
+            <!--DOWNLOAD JAVADOC STYLESHEET-->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
                 <artifactId>download-maven-plugin</artifactId>
@@ -247,7 +259,8 @@
                 </executions>
             </plugin>
 
-            <!--Javadoc-->
+
+            <!--JAVADOC-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -270,7 +283,8 @@
                 </executions>
             </plugin>
 
-            <!--Sources-->
+
+            <!--SOURCES-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -287,7 +301,7 @@
             </plugin>
 
 
-            <!--Code Coverage-->
+            <!--CODE COVERAGE-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -340,7 +354,7 @@
             <build>
                 <plugins>
 
-                    <!--Code Signing-->
+                    <!--CODE SIGNING-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -363,7 +377,8 @@
                         </executions>
                     </plugin>
 
-                    <!--Release Plugin-->
+
+                    <!--RELEASE PLUGIN-->
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -375,6 +390,7 @@
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
+
 
                 </plugins>
             </build>
