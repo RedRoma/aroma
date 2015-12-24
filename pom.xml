@@ -4,7 +4,7 @@
 
     <groupId>tech.aroma.banana</groupId>
     <artifactId>banana</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
@@ -85,7 +85,127 @@
     <dependencyManagement>
         <dependencies>
 
-            <!--Unit Testing Libraries-->
+            <!--ALCHEMY-->
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-annotations</artifactId>
+                <version>1.3.1</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-arguments</artifactId>
+                <version>1.3</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-generator</artifactId>
+                <version>1.3.1</version>
+                <scope>test</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-http</artifactId>
+                <version>1.1.1</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-thrift</artifactId>
+                <version>0.9</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-test</artifactId>
+                <version>1.4</version>
+                <scope>test</scope>
+            </dependency>
+            <!--====================-->
+
+
+            <!--LOGGING-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.13</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.13</version>
+                <scope>test</scope>
+            </dependency>
+            <!--====================-->
+
+            <!--LOGBACK-->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.1.3</version>
+            </dependency>
+            <!--====================-->
+
+
+            <!--APACHE HTTP-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.1</version>
+            </dependency>
+            <!--====================-->
+
+            <!--GUAVA-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
+            <!--====================-->
+
+            <!--GSON-->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.5</version>
+            </dependency>
+            <!--====================-->
+
+            <!--GUICE-->
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice</artifactId>
+                <version>4.0</version>
+            </dependency>
+            <!--====================-->
+
+            <!--THRIFT-->
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.9.3</version>
+            </dependency>
+            <!--====================-->
+
+            
+            <!--CASSANDRA--> 
+            <dependency>
+                <groupId>com.datastax.cassandra</groupId>
+                <artifactId>cassandra-driver-core</artifactId>
+                <version>2.2.0-rc3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.datastax.cassandra</groupId>
+                <artifactId>cassandra-driver-mapping</artifactId>
+                <version>2.2.0-rc3</version>
+            </dependency>
+            <!--====================-->
+
+            
+            <!--UNIT TESTING-->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -106,111 +226,15 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
+            <!--====================-->
 
-            <!--Logging-->
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.13</version>
-            </dependency>
-
-            <!--Simple Logger for Test Runs-->
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>1.7.13</version>
-                <scope>test</scope>
-            </dependency>
-            
-            <!--Logback-->
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <version>1.1.3</version>
-            </dependency>
-
-
-            <!--Apache HTTP Client-->
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>4.5.1</version>
-            </dependency>
-
-            <!--Google Guava-->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>18.0</version>
-            </dependency>
-
-            <!--Google GSON-->
-            <dependency>
-                <groupId>com.google.code.gson</groupId>
-                <artifactId>gson</artifactId>
-                <version>2.5</version>
-            </dependency>
-            
-            <!--Google Guice-->
-            <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <version>4.0</version>
-            </dependency>
-
-            <!--Apache Thrift-->
-            <dependency>
-                <groupId>org.apache.thrift</groupId>
-                <artifactId>libthrift</artifactId>
-                <version>0.9.3</version>
-            </dependency>
-
-            <!-- Alchemy Dependencies -->
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-annotations</artifactId>
-                <version>1.3</version>
-            </dependency>
-            
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-arguments</artifactId>
-                <version>1.3</version>
-            </dependency>
-            
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-generator</artifactId>
-                <version>1.3</version>
-                <scope>test</scope>
-            </dependency>
-            
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-http</artifactId>
-                <version>1.1.1</version>
-            </dependency>
-            
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-thrift</artifactId>
-                <version>0.9</version>
-            </dependency>
-            
-            <dependency>
-                <groupId>tech.sirwellington.alchemy</groupId>
-                <artifactId>alchemy-test</artifactId>
-                <version>1.3</version>
-                <scope>test</scope>
-            </dependency>
-            
         </dependencies>
     </dependencyManagement>
 
     <build>
         <plugins>
-
-            <!--Download Javadoc Stylesheet-->
+        
+            <!--DOWNLOAD JAVADOC STYLESHEET-->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
                 <artifactId>download-maven-plugin</artifactId>
@@ -232,7 +256,8 @@
                 </executions>
             </plugin>
 
-            <!--Javadoc-->
+
+            <!--JAVADOC-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -255,7 +280,8 @@
                 </executions>
             </plugin>
 
-            <!--Sources-->
+
+            <!--SOURCES-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -272,7 +298,7 @@
             </plugin>
 
 
-            <!--Code Coverage-->
+            <!--CODE COVERAGE-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -325,7 +351,7 @@
             <build>
                 <plugins>
 
-                    <!--Code Signing-->
+                    <!--CODE SIGNING-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -348,7 +374,8 @@
                         </executions>
                     </plugin>
 
-                    <!--Release Plugin-->
+
+                    <!--RELEASE PLUGIN-->
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -361,10 +388,10 @@
                         </configuration>
                     </plugin>
 
+
                 </plugins>
             </build>
 
         </profile>
     </profiles>
-
 </project>
