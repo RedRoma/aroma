@@ -180,7 +180,17 @@
                 <artifactId>guice</artifactId>
                 <version>4.0</version>
             </dependency>
+
+            <!--DECORATOR LIBRARY-->
+            <dependency>
+                <groupId>tech.sirwellington.decorice</groupId>
+                <artifactId>decorice</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
             <!--====================-->
+
+
+
 
             <!--THRIFT-->
             <dependency>
@@ -449,4 +459,5 @@
 
         </profile>
     </profiles>
+    
 </project>
