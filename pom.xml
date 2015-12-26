@@ -185,7 +185,7 @@
             <dependency>
                 <groupId>tech.sirwellington.decorice</groupId>
                 <artifactId>decorice</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0</version>
             </dependency>
             <!--====================-->
 
