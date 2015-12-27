@@ -94,7 +94,9 @@
     <dependencyManagement>
         <dependencies>
 
+            <!--=======================-->
             <!--ALCHEMY-->
+            <!--=======================-->
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-annotations</artifactId>
@@ -132,10 +134,11 @@
                 <version>1.4</version>
                 <scope>test</scope>
             </dependency>
-            <!--====================-->
 
 
+            <!--=======================-->
             <!--LOGGING-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -148,68 +151,77 @@
                 <version>1.7.13</version>
                 <scope>test</scope>
             </dependency>
-            <!--====================-->
 
-            <!--LOGBACK-->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>1.1.3</version>
             </dependency>
-            <!--====================-->
 
 
+            <!--=======================-->
             <!--APACHE HTTP-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>4.5.1</version>
             </dependency>
-            <!--====================-->
 
+
+            <!--=======================-->
             <!--GUAVA-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
             </dependency>
-            <!--====================-->
 
+
+            <!--=======================-->
             <!--GSON-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>2.5</version>
             </dependency>
-            <!--====================-->
 
+
+            <!--=======================-->
             <!--GUICE-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
                 <version>4.0</version>
             </dependency>
 
+
+            <!--=======================-->
             <!--DECORATOR LIBRARY-->
+            <!--=======================-->
             <dependency>
                 <groupId>tech.sirwellington.decorice</groupId>
                 <artifactId>decorice</artifactId>
                 <version>1.0</version>
             </dependency>
-            <!--====================-->
 
 
-
+            <!--=======================-->
             <!--THRIFT-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.apache.thrift</groupId>
                 <artifactId>libthrift</artifactId>
                 <version>0.9.3</version>
             </dependency>
-            <!--====================-->
 
             
+            <!--=======================-->
             <!--CASSANDRA--> 
+            <!--=======================-->
             <dependency>
                 <groupId>com.datastax.cassandra</groupId>
                 <artifactId>cassandra-driver-core</artifactId>
@@ -220,10 +232,11 @@
                 <artifactId>cassandra-driver-mapping</artifactId>
                 <version>2.2.0-rc3</version>
             </dependency>
-            <!--====================-->
 
             
+            <!--=======================-->
             <!--UNIT TESTING-->
+            <!--=======================-->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -244,7 +257,6 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-            <!--====================-->
 
         </dependencies>
     </dependencyManagement>
