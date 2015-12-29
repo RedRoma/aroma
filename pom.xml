@@ -384,12 +384,17 @@
             
             <plugins>
 
+                <!--JAR PLUGIN-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>2.6</version>
+                    <configuration>
+                        <useUniqueVersions>false</useUniqueVersions>
+                    </configuration>
                 </plugin>
 
+                <!--DEPENDENCY PLUGIN-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
@@ -403,9 +408,11 @@
                             </goals>
                             <configuration>
                                 <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                <overWriteReleases>false</overWriteReleases>
-                                <overWriteSnapshots>false</overWriteSnapshots>
+                                <overWriteReleases>true</overWriteReleases>
+                                <overWriteSnapshots>true</overWriteSnapshots>
                                 <overWriteIfNewer>true</overWriteIfNewer>
+                                <!--Set This to enabled Timestamped-Snapshot jars-->
+                                <!--<useBaseVersion>false</useBaseVersion>-->
                             </configuration>
                         </execution>
                     </executions>
@@ -485,5 +492,4 @@
 
         </profile>
     </profiles>
-    
 </project>
