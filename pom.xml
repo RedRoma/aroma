@@ -275,6 +275,14 @@
                 <scope>test</scope>
             </dependency>
 
+            <!--Disables Logging during unit testing-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-nop</artifactId>
+                <version>1.7.12</version>
+                <scope>test</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
