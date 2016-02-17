@@ -8,14 +8,14 @@
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
-    <url>https://github.com/AromaTech/banana</url>
+    <url>https://github.com/RedRoma/banana</url>
     <description>
         Accessible Micro-Service Notifications for Developers.
     </description>
 
     <organization>
-        <name>Aroma Tech</name>
-        <url>https://github.com/AromaTech</url>
+        <name>RedRoma</name>
+        <url>https://github.com/RedRoma</url>
     </organization>
 
     <developers>
@@ -23,7 +23,7 @@
             <name>Juan Wellington Moreno</name>
             <email>jwellington.moreno@gmail.com</email>
             <id>SirWellington</id>
-            <organizationUrl>https://github.com/AromaTech</organizationUrl>
+            <organizationUrl>https://github.com/RedRoma</organizationUrl>
             <roles>
                 <role>owner</role>
                 <role>developer</role>
@@ -41,13 +41,13 @@
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/AromaTech/issues</url>
+        <url>https://github.com/RedRoma/issues</url>
     </issueManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:AromaTech/banana.git</connection>
-        <developerConnection>scm:git:git@github.com:AromaTech/banana.git</developerConnection>
-        <url>git@github.com:AromaTech/banana.git</url>
+        <connection>scm:git:git@github.com:RedRoma/banana.git</connection>
+        <developerConnection>scm:git:git@github.com:RedRoma/banana.git</developerConnection>
+        <url>git@github.com:RedRoma/banana.git</url>
     </scm>
 
     <inceptionYear>2015</inceptionYear>
@@ -305,7 +305,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://raw.githubusercontent.com/AromaTech/banana/develop/javadoc-style-sheet.css</url>
+                            <url>https://raw.githubusercontent.com/RedRoma/banana/develop/javadoc-style-sheet.css</url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
                             <failOnError>false</failOnError>
                         </configuration>
