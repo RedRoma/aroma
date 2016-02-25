@@ -4,24 +4,24 @@
 
     <groupId>tech.aroma</groupId>
     <artifactId>aroma</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
     <url>https://github.com/RedRoma/aroma</url>
     <description>
-        Accessible Micro-Service Notifications for Developers.
+        Aroma allows two-way communication between Developers/Product Owners and their Live Software.
     </description>
 
     <organization>
         <name>RedRoma</name>
-        <url>https://github.com/RedRoma</url>
+        <url>http://RedRoma.tech/</url>
     </organization>
 
     <developers>
         <developer>
             <name>Juan Wellington Moreno</name>
-            <email>jwellington.moreno@gmail.com</email>
+            <email>juan@redroma.tech</email>
             <id>SirWellington</id>
             <organizationUrl>https://github.com/RedRoma</organizationUrl>
             <roles>
@@ -101,7 +101,7 @@
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-annotations</artifactId>
-                <version>1.4</version>
+                <version>1.5</version>
             </dependency>
             
             <dependency>
@@ -149,27 +149,27 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.7.13</version>
+                <version>1.7.16</version>
             </dependency>
             
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
-                <version>1.7.13</version>
+                <version>1.7.16</version>
                 <scope>test</scope>
             </dependency>
 
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.1.3</version>
+                <version>1.1.5</version>
             </dependency>
             
             <!--Disables Logging during unit testing-->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-nop</artifactId>
-                <version>1.7.13</version>
+                <version>1.7.16</version>
                 <scope>test</scope>
             </dependency>
 
@@ -200,7 +200,7 @@
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
-                <version>2.5</version>
+                <version>2.6.1</version>
             </dependency>
 
 
