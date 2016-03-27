@@ -1,7 +1,7 @@
 Aroma
 ==============================================
 
-[<img src="https://raw.githubusercontent.com/RedRoma/aroma/develop/Graphics/Logo-LongShadow.png" width="500">](https://github.com/RedRoma/aroma)
+[<img src="https://raw.githubusercontent.com/RedRoma/aroma/develop/Graphics/Logo.png" width="500">](https://github.com/RedRoma/aroma)
 
 [![Build Status](http://jenkins.sirwellington.tech/job/Aroma/badge/icon)](http://jenkins.sirwellington.tech/job/Aroma/)
 
