@@ -276,7 +276,7 @@
             <dependency>
                 <groupId>net.sf.jopt-simple</groupId>
                 <artifactId>jopt-simple</artifactId>
-                <version>4.9</version>
+                <version>5.0.1</version>
             </dependency>
             
             <!--=======================-->
@@ -314,7 +314,7 @@
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
                 <artifactId>download-maven-plugin</artifactId>
-                <version>1.2.1</version>
+                <version>1.3.0</version>
                 <!--<version>1.2.2-SNAPSHOT</version>-->
                 <executions>
                     <execution>
@@ -516,7 +516,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.6</version>
+                        <version>1.6.7</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>ossrh</serverId>
