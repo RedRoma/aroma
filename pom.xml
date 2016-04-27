@@ -131,6 +131,13 @@
             
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
+                <artifactId>alchemy-http-mock</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <scope>test</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-thrift</artifactId>
                 <version>0.9.1</version>
             </dependency>
