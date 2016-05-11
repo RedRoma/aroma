@@ -114,7 +114,7 @@
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-collections</artifactId>
-                <version>1.1-SNAPSHOT</version>
+                <version>1.1</version>
             </dependency>
             
             <dependency>
@@ -127,13 +127,13 @@
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-http</artifactId>
-                <version>1.2-SNAPSHOT</version>
+                <version>1.2</version>
             </dependency>
             
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-http-mock</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0</version>
                 <scope>test</scope>
             </dependency>
             
@@ -323,7 +323,6 @@
                 <groupId>com.googlecode.maven-download-plugin</groupId>
                 <artifactId>download-maven-plugin</artifactId>
                 <version>1.3.0</version>
-                <!--<version>1.2.2-SNAPSHOT</version>-->
                 <executions>
                     <execution>
                         <id>download-javadoc-stylesheet</id>
