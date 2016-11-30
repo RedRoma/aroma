@@ -42,7 +42,7 @@
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/RedRoma/issues</url>
+        <url>https://github.com/RedRoma/aroma/issues</url>
     </issueManagement>
 
     <scm>
@@ -83,14 +83,14 @@
         </repository>
 
     </distributionManagement>
-    
+
     <repositories>
         <!--SNAPSHOT REPOSITORY-->
         <repository>
             <id>ossrh-snapshot</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
-        
+
     </repositories>
 
     <dependencyManagement>
@@ -104,45 +104,45 @@
                 <artifactId>alchemy-annotations</artifactId>
                 <version>1.5</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-arguments</artifactId>
                 <version>1.4</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-collections</artifactId>
                 <version>1.1</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-generator</artifactId>
                 <version>1.4</version>
                 <scope>test</scope>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-http</artifactId>
                 <version>1.2</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-http-mock</artifactId>
                 <version>1.0</version>
                 <scope>test</scope>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-thrift</artifactId>
                 <version>0.9.1</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-test</artifactId>
@@ -159,7 +159,7 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.21</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
@@ -172,7 +172,7 @@
                 <artifactId>logback-classic</artifactId>
                 <version>1.1.7</version>
             </dependency>
-            
+
             <!--Disables Logging during unit testing-->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -241,9 +241,9 @@
                 <version>0.9.3</version>
             </dependency>
 
-            
+
             <!--=======================-->
-            <!--JASYPT (Encryption)--> 
+            <!--JASYPT (Encryption)-->
             <!--=======================-->
             <dependency>
                 <groupId>org.jasypt</groupId>
@@ -251,16 +251,16 @@
                 <version>1.9.2</version>
             </dependency>
 
-            
+
             <!--=======================-->
-            <!--CASSANDRA--> 
+            <!--CASSANDRA-->
             <!--=======================-->
             <dependency>
                 <groupId>com.datastax.cassandra</groupId>
                 <artifactId>cassandra-driver-core</artifactId>
                 <version>3.0.1</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>com.datastax.cassandra</groupId>
                 <artifactId>cassandra-driver-mapping</artifactId>
@@ -275,18 +275,18 @@
                 <groupId>net.coobird</groupId>
                 <artifactId>thumbnailator</artifactId>
                 <version>0.4.8</version>
-            </dependency>            
+            </dependency>
 
 
             <!--=======================-->
-            <!--COMMAND LINE OPTIONS--> 
+            <!--COMMAND LINE OPTIONS-->
             <!--=======================-->
             <dependency>
                 <groupId>net.sf.jopt-simple</groupId>
                 <artifactId>jopt-simple</artifactId>
                 <version>5.0.1</version>
             </dependency>
-            
+
             <!--=======================-->
             <!--UNIT TESTING-->
             <!--=======================-->
@@ -315,9 +315,9 @@
     </dependencyManagement>
 
     <build>
-        
+
         <plugins>
-        
+
             <!--DOWNLOAD JAVADOC STYLESHEET-->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
@@ -427,7 +427,7 @@
         </plugins>
 
         <pluginManagement>
-            
+
             <plugins>
 
                 <!--JAR PLUGIN-->
