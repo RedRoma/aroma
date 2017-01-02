@@ -170,7 +170,7 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.1.7</version>
+                <version>1.1.8</version>
             </dependency>
 
             <!--Disables Logging during unit testing-->
@@ -385,7 +385,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.6.201602180812</version>
+                <version>0.7.7.201606060606</version>
                 <configuration>
                     <excludes>
                         <!--Exclude Exceptions-->
@@ -434,7 +434,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>3.0.2</version>
                     <configuration>
                         <useUniqueVersions>false</useUniqueVersions>
                     </configuration>
@@ -467,7 +467,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>3.0.0</version>
                     <configuration>
                         <descriptors>
                             <descriptor>${project.basedir}/src/main/assembly/assembly.xml</descriptor>
