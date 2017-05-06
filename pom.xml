@@ -67,6 +67,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
+        <kotlin.version>1.1.2-3</kotlin.version>
     </properties>
 
 
@@ -150,6 +151,21 @@
                 <scope>test</scope>
             </dependency>
 
+            <!--=======================-->
+            <!--KOTLIN-->
+            <!--=======================-->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-jre8</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-test</artifactId>
+                <version>${kotlin.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <!--=======================-->
             <!--LOGGING-->
@@ -314,6 +330,7 @@
         </dependencies>
     </dependencyManagement>
 
+
     <build>
 
         <plugins>
@@ -418,6 +435,37 @@
                         <configuration>
                             <rules>
                             </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <!--KOTLIN-->
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <configuration>
+                    <jvmTarget>1.8</jvmTarget>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals> <goal>compile</goal> </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <sourceDir>${project.basedir}/src/main/java</sourceDir>
+                            </sourceDirs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <goals> <goal>test-compile</goal> </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <sourceDir>${project.basedir}/src/test/java</sourceDir>
+                            </sourceDirs>
                         </configuration>
                     </execution>
                 </executions>
