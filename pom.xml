@@ -363,6 +363,13 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>com.natpryce</groupId>
+                <artifactId>hamkrest</artifactId>
+                <version>1.4.0.0</version>
+            </dependency>
+
+
             <!--KOTLIN MOCKITO INTEROPERABILITY-->
             <dependency>
                 <groupId>com.nhaarman</groupId>
