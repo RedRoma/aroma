@@ -377,6 +377,12 @@
                 <artifactId>mockito-kotlin</artifactId>
                 <version>1.4.0</version>
                 <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>kotlin-stdlib</artifactId>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
         </dependencies>
