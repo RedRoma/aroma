@@ -6,12 +6,13 @@ Overall document style
 @import url('resources/fonts/dejavu.css');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Play);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 body {
     background-color:#ffffff;
     color:#353833;
-    font-family:'Play', Arial, Helvetica, sans-serif;
+    font-family:'Source Code Pro', Arial, Helvetica, sans-serif;
     font-size:16px;
     margin:0;
 }
