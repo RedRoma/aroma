@@ -299,7 +299,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
-                <version>4.2.5.RELEASE</version>
+                <version>4.3.8.RELEASE</version>
             </dependency>
 
             <!-- C3P0 CONNECTION POOLING-->
