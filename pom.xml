@@ -148,7 +148,7 @@
             <dependency>
                 <groupId>tech.sirwellington.alchemy</groupId>
                 <artifactId>alchemy-test</artifactId>
-                <version>2.1</version>
+                <version>2.1.1</version>
                 <scope>test</scope>
             </dependency>
 
