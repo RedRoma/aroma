@@ -13,4 +13,5 @@ Aroma allows for two-way communication between Developers and their Applications
 
 + Java
 + Swift
++ Kotlin
 + ...More coming soon
