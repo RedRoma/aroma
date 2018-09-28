@@ -556,10 +556,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.0.2</version>
-                    <configuration>
-                        <useUniqueVersions>false</useUniqueVersions>
-                    </configuration>
+                    <version>3.1.0</version>
                 </plugin>
 
                 <!--DEPENDENCY PLUGIN-->
@@ -628,6 +625,10 @@
                                 <exclude>tech.sirwellington.alchemy.thrift.*</exclude>
                                 <exclude>**/*Exception.*</exclude>
                             </excludes>
+                            <gpgArguments>
+                                <arg>--pinentry-mode</arg>
+                                <arg>loopback</arg>
+                            </gpgArguments>
                         </configuration>
                         <executions>
                             <execution>
