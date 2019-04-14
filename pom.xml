@@ -5,7 +5,7 @@
 
     <groupId>tech.aroma</groupId>
     <artifactId>aroma</artifactId>
-    <version>3.3</version>
+    <version>3.4-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
